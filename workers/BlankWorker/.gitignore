@@ -1,0 +1,12 @@
+*.iml
+.idea
+build
+*.log
+.spatialos
+
+worker-sdk
+spatialos_worker_packages.json
+
+
+
+.DS_Store

@@ -1,0 +1,13 @@
+
+ð
+Mover.protoschema.blankworkerimprobable/entity_state.proto!improbable/standard_library.proto"k
+	MoverData^
+field1_destination (2.schema.improbable.CoordinatesBÂódestinationRfield1Destination"Š
+Mover
+Events
+
+Commands2o
+component_extension.schema.improbable.EntityStateÒ	 (2.schema.blankworker.MoverDataRcomponentExtension2j
+event_extension.schema.improbable.EntityEventÒ	 (2 .schema.blankworker.Mover.EventsReventExtension2r
+command_extension .schema.improbable.EntityCommandÒ	 (2".schema.blankworker.Mover.CommandsRcommandExtension:Âó
+blankworker.MoverÒ	BBMoverOuterClass

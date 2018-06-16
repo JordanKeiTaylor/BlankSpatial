@@ -1,0 +1,15 @@
+*.iml
+.idea
+build
+*.log
+.spatialos
+*.class
+
+worker-sdk
+spatialos.java.build.json
+spatialos_worker_packages.json
+.gradle/
+/.gradle/
+/build.gradle
+
+.DS_Store

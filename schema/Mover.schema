@@ -1,0 +1,10 @@
+package blankworker;
+
+
+import "improbable/standard_library.schema";
+
+
+component Mover {
+  id = 1234;
+  improbable.Coordinates destination = 1; // a property
+}

@@ -1,0 +1,11 @@
+
+Å
+improbable/vector3.protoschema.improbableimprobable/entity_state.proto"p
+Vector3f 
+field1_x (BÂóxRfield1X 
+field2_y (BÂóyRfield2Y 
+field3_z (BÂózRfield3Z"p
+Vector3d 
+field1_x (BÂóxRfield1X 
+field2_y (BÂóyRfield2Y 
+field3_z (BÂózRfield3ZBBVector3OuterClass

@@ -1,0 +1,51 @@
+{
+  "build": {
+    "tasks_filename": "spatialos.java.build.json",
+    "generated_build_scripts_type": "java"
+  },
+  "bridge": {
+    "worker_attribute_set": {
+      "attributes": [
+        "SnapshotGenerator"
+      ]
+    },
+    "entity_interest": {
+      "range_entity_interest": {
+        "radius": 0
+      }
+    },
+    "component_delivery": {
+      "checkout_all_initially": true,
+      "default": "RELIABLE_ORDERED"
+    }
+  },
+  "external": {
+    "default": {
+      "run_type": "EXECUTABLE_ZIP",
+      "windows": {
+        "artifact_name": "SnapshotGenerator@Windows.zip",
+        "command": "java",
+        "arguments": [
+          "-jar",
+          "SnapshotGenerator.jar"
+        ]
+      },
+      "linux": {
+        "artifact_name": "SnapshotGenerator@Linux.zip",
+        "command": "java",
+        "arguments": [
+          "-jar",
+          "SnapshotGenerator.jar"
+        ]
+      },
+      "macos": {
+        "artifact_name": "SnapshotGenerator@Mac.zip",
+        "command": "java",
+        "arguments": [
+          "-jar",
+          "SnapshotGenerator.jar"
+        ]
+      }
+    }
+  }
+}

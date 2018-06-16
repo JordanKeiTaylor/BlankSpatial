@@ -1,0 +1,7 @@
+include ':worker-sdk'
+include ':worker'
+include ':SnapshotGenerator'
+project(':SnapshotGenerator').projectDir = file('../SnapshotGenerator/worker')
+
+rootProject.name = "BlankWorker"
+gradle.ext.mainClass = 'BlankWorker'

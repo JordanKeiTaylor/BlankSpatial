@@ -1,0 +1,66 @@
+{
+  "build": {
+    "tasks_filename": "spatialos.java.build.json"
+  },
+  "bridge": {
+    "worker_attribute_set": {
+      "attributes":[
+        "blank"
+      ]
+    },
+    "entity_interest": {
+      "range_entity_interest": {
+        "radius": 5
+      }
+    },
+    "streaming_query": [],
+    "component_delivery": {
+      "default": "RELIABLE_ORDERED",
+      "checkout_all_initially": false,
+      "override": {
+      }
+    }
+  },
+
+  "managed": {
+    "windows": {
+      "artifact_name": "BlankWorker@Windows.zip",
+      "command": "java",
+      "arguments": [
+        "-jar",
+        "BlankWorker.jar",
+        "workerId=${IMPROBABLE_WORKER_ID}",
+        "workerType=${IMPROBABLE_WORKER_NAME}",
+        "hostName=${IMPROBABLE_RECEPTIONIST_HOST}",
+        "port=${IMPROBABLE_RECEPTIONIST_PORT}",
+        "logFile=${IMPROBABLE_LOG_FILE}"
+      ]
+    },
+    "macos": {
+      "artifact_name": "BlankWorker@Mac.zip",
+      "command": "java",
+      "arguments": [
+        "-jar",
+        "BlankWorker.jar",
+        "workerId=${IMPROBABLE_WORKER_ID}",
+        "workerType=${IMPROBABLE_WORKER_NAME}",
+        "hostName=${IMPROBABLE_RECEPTIONIST_HOST}",
+        "port=${IMPROBABLE_RECEPTIONIST_PORT}",
+        "logFile=${IMPROBABLE_LOG_FILE}"
+      ]
+    },
+    "linux": {
+      "artifact_name": "BlankWorker@Linux.zip",
+      "command": "java",
+      "arguments": [
+        "-jar",
+        "BlankWorker.jar",
+        "workerId=${IMPROBABLE_WORKER_ID}",
+        "workerType=${IMPROBABLE_WORKER_NAME}",
+        "hostName=${IMPROBABLE_RECEPTIONIST_HOST}",
+        "port=${IMPROBABLE_RECEPTIONIST_PORT}",
+        "logFile=${IMPROBABLE_LOG_FILE}"
+      ]
+    }
+  }
+}

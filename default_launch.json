@@ -1,0 +1,47 @@
+{
+  "template": "small",
+  "world": {
+    "chunkEdgeLengthMeters": 5,
+    "legacy_flags": [
+      {
+        "name": "load_snapshot_at_startup",
+        "value": "true"
+      },
+      {
+        "name": "snapshot_source_file",
+        "value": "snapshots/default.snapshot"
+      },
+      {
+        "name": "worker_start_connection_timeout_ms",
+        "value": "100000"
+      },
+      {
+        "name": "bridge_qos_max_timeout",
+        "value": "0"
+      }
+    ],
+    "dimensions": {
+      "x_meters": 120,
+      "z_meters": 120
+    },
+    "snapshots": {
+      "snapshotWritePeriodSeconds": 0
+    }
+  },
+  "workers": [
+    {
+      "worker_type": "BlankWorker",
+      "permissions": [
+        {
+          "all": {}
+
+        }
+      ],
+      "load_balancing": {
+        "auto_hex_grid": {
+          "num_workers": 6
+        }
+      }
+    }
+  ]
+}

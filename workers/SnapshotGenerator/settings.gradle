@@ -1,0 +1,5 @@
+include ':worker-sdk'
+include ':worker'
+
+rootProject.name = "SnapshotGenerator"
+gradle.ext.mainClass = 'SnapshotGenerator'
